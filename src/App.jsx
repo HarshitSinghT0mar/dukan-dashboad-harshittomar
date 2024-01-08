@@ -5,9 +5,9 @@ import "./global.css";
 
 function App() {
   return (
-    <div className="APP_CONTAINER flex ">
+    <div className="APP_CONTAINER flex h-full">
       <Navbar />
-    <div className="w-full h-screen flex flex-col gap-5 bg-[rgb(250,250,250)]">
+    <div className="w-full h-full flex flex-col gap-5 bg-[rgb(250,250,250)]">
       
       <Header />
       <div className="p-[32px]">

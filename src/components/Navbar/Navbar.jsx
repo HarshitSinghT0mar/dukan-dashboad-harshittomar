@@ -18,15 +18,34 @@ let navData=[
 
 function Navbar() {
   return (
-    <div className='w-[224px] bg-[#1E2640] text-white py-[16px] px-[10px]'>
+    <section className='w-[224px]   bg-[#1E2640] text-white py-[16px] px-[10px]'>
       <NavHeader />
-      <div className='flex flex-col gap-[4px]'>
+      <nav className='flex flex-col gap-[4px] min-h-[1314px]'>
        { navData.map((data,index)=>{
         const {icon,heading}=data
-        return <NavItem key={index} navIcon={icon} navText={heading} />
+        return <NavItem key={index} navIcon={icon} navText={heading} className={` ${index===5 && ''}`}  />
        })}
+      </nav>
+      <div className="items-stretch rounded  bg-slate-700 flex max-w-[192px] flex-col justify-center pl-3 pr-8 py-1.5">
+      <div className="items-center flex justify-between gap-3">
+        <div className="items-center rounded bg-white bg-opacity-10 flex aspect-square flex-col justify-center w-9 h-9 my-auto px-1.5">
+          <img
+            loading="lazy"
+            src='icons/walletIcon.svg'
+            className="aspect-square object-contain object-center w-full overflow-hidden"
+          />
+        </div>
+        <span className="items-stretch self-stretch flex grow basis-[0%] flex-col">
+          <div className="text-white text-sm leading-4 whitespace-nowrap">
+            Available credits
+          </div>
+          <div className="text-white text-base font-medium leading-6">
+            222.10
+          </div>
+        </span>
       </div>
     </div>
+    </section>
   )
 }
 

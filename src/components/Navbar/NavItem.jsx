@@ -3,11 +3,11 @@ import React from 'react'
 
 
 
-function NavItem({navText, navIcon}) {
+function NavItem({navText, navIcon,className}) {
 
 
   return (
-    <div className="items-stretch rounded flex justify-between gap-3 mt-1 px-4 py-2 max-md:pr-5">
+    <div className={`items-stretch rounded flex justify-between gap-3 mt-1 px-4 py-2 max-md:pr-5 hover:bg-[#343C53] cursor-pointer ${className}`}>
       <img
         loading="lazy"
         src={navIcon}
