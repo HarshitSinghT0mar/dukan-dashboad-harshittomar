@@ -1,14 +1,15 @@
 import Header from "./components/Header";
 import Navbar from "./components/Navbar/Navbar";
-import OverviewSection from "./components/Overview";
+import OverviewSection from "./components/OverviewSection/OverviewSection";
+import TransactionSection from "./components/TransactionSection/TransactionSection";
 import TransactionTable from "./components/TransactionSection/TransactionTable";
 import "./global.css";
 
 function App() {
   return (
-    <div className="APP_CONTAINER flex">
+    <div className="flex  bg-[#fafafa]">
       <Navbar />
-    <div className="w-full h-full  bg-[rgb(250,250,250)]">
+    <div className="w-full h-full ">
       
       <Header />
       <div className="p-[32px]">
@@ -16,7 +17,7 @@ function App() {
       <OverviewSection />
       </div>
       <div>
-        <TransactionTable />
+        <TransactionSection />
       </div>
       </div>
     </div>

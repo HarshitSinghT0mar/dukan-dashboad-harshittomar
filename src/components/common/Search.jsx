@@ -1,8 +1,8 @@
 import React from "react";
 
-const Search = ({className}) => {
+const Search = ({className, placeholder}) => {
   return (
-    <div className={`items-center self-stretch w-[400px] bg-zinc-100 flex gap-2 px-4 py-2.5 rounded-md ${className}`}>
+    <div className={`items-center self-stretch w-[400px] bg-[#f2f2f2] border-[#999999] flex gap-2 px-4 py-2.5  rounded-md ${className}`}>
       <img
         loading="lazy"
         src="icons/searchIcon.svg"
@@ -16,11 +16,11 @@ const Search = ({className}) => {
           type="text"
           id="searchInput"
 
-          placeholder="Search features, tutorials, etc."
+          placeholder={placeholder}
           aria-label="Search"
           role="search"
 
-          className="bg-transparent w-full outline-none"
+          className={`bg-transparent w-full outline-none ${className}`}
         />
       </div>
     </div>
