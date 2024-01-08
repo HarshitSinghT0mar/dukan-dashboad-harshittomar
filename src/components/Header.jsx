@@ -1,4 +1,5 @@
 import * as React from "react";
+import Search from "./common/Search";
 
 function Header(props) {
   return (
@@ -16,17 +17,7 @@ function Header(props) {
             <div className="text-neutral-600 text-xs leading-4">How it works</div>
           </div>
         </div>
-        <div className="items-center self-stretch bg-zinc-100 flex justify-between gap-2 px-4 py-2.5 rounded-md max-md:pr-5">
-          <img
-            loading="lazy"
-            src="icons/searchIcon.svg"
-            className="aspect-square object-contain object-center w-4 overflow-hidden shrink-0 max-w-full my-auto"
-            alt="Search Image"
-          />
-          <div className="text-zinc-500 text-base leading-6 self-stretch grow whitespace-nowrap">
-            Search features, tutorials, etc.
-          </div>
-        </div>
+     <Search />
       </header>
       <div className="items-stretch flex justify-between gap-3">
         <img

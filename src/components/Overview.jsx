@@ -3,8 +3,8 @@ import * as React from "react";
 function OverviewSection() {
   return (
     <div className="w-full">
-       <div className="justify-between items-center flex gap-5 mt-8 mx-3 max-md:max-w-full max-md:flex-wrap max-md:mr-2.5 mb-[24px]">
-      <p className="text-zinc-900 text-xl font-medium leading-7 my-auto">
+       <div className="justify-between items-center flex gap-5  max-md:max-w-full max-md:flex-wrap max-md:mr-2.5 mb-[24px]">
+      <p className="font-medium text-xl text-[#1A181E] leading-7 my-auto">
         Overview
       </p>
       <div className="rounded border border-[color:var(--Black-85,#D9D9D9)] bg-white self-stretch flex items-center justify-between gap-2.5 px-3.5 py-2.5 border-solid">
