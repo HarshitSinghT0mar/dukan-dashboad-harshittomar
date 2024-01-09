@@ -18,12 +18,12 @@ let navData=[
 
 function Navbar() {
   return (
-    <section className='w-[224px]   bg-[#1E2640] text-white py-[16px] px-[10px]'>
+    <section className='w-[224px] bg-[#1E2640] text-white py-[16px] px-[10px]'>
       <NavHeader />
-      <nav className='flex flex-col gap-[4px] min-h-[1314px]'>
+      <nav className='flex flex-col gap-[4px] h-[1314px]'>
        { navData.map((data,index)=>{
         const {icon,heading}=data
-        return <NavItem key={index} navIcon={icon} navText={heading} className={` ${index===5 && ''}`}  />
+        return <NavItem key={index} navIcon={icon} navText={heading} className={` ${index===5 && 'bg-[#343C53]'}`}  />
        })}
       </nav>
       <div className="items-stretch rounded  bg-slate-700 flex max-w-[192px] flex-col justify-center pl-3 pr-8 py-1.5">

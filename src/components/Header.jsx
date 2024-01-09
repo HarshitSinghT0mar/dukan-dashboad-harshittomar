@@ -20,16 +20,16 @@ function Header(props) {
      <Search placeholder="Search features, tutorials, etc." />
     
       <div className="items-stretch flex justify-between gap-3">
-      {/* <img                         
-      src="icons/message.svg"                                  //icon provided is larger in size
-      loading="lazy"
+      <img
+      loading="lazy"                   //icon provided in figma is larger so using other
+      src="icons/messageIcon.svg"
       className="aspect-square object-contain object-center w-10 overflow-hidden shrink-0 max-w-full"
-    /> */}   
+    />
      
         <img
           loading="lazy"
           src="icons/dropdownArrow.svg"
-          className="aspect-square object-contain cursor-pointer object-center w-10 overflow-hidden shrink-0 max-w-full"
+          className="aspect-square object-contain object-center w-10 overflow-hidden shrink-0 max-w-full"
         
         />
       </div>
